@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Salary Processor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+
+    <label>Salary:</label>
+    <input id="base_salary" type="number" placeholder="set your salary" autofocus="true" />
+    <input type="button" value="compute" onclick="computeButtonClicked()" />
+
+    <div id="results" class="hide">
+        <h1>Results</h1>
+
+        <h2>Profits</h2>
+        <h3>Gross</h3>
+        <ul>
+            <li><label>Per work-Day: </label><span id="results.gross.perday"></span></li>
+            <li><label>Per work-Hour: </label><span id="results.gross.perhour"></span></li>
+            <li><label>Per Year: </label><span id="results.gross.peryear"></span></li>
+        </ul>
+        <h3>Liquid</h3>
+        <ul>
+            <li><label>Per work-Day: </label><span id="results.liquid.perday"></span></li>
+            <li><label>Per work-Hour: </label><span id="results.liquid.perhour"></span></li>
+            <li><label>Per Year: </label><span id="results.liquid.peryear"></span></li>
+        </ul>
+
+        <h2>Taxes</h2>
+        <ul>
+            <li><label>IRS: </label><span id="results.irs"></span></li>
+            <li><label>Segurança Social: </label><span id="results.ss"></span></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+    <script src="utils.js"></script>
+    <script src="calculations.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
